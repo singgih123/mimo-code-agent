@@ -1,0 +1,17 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "maxDuration": 120
+    }
+  },
+  "env": {
+    "MIMO_API_KEY": "@mimo-api-key",
+    "MIMO_BASE_URL": "@mimo-base-url",
+    "GITHUB_TOKEN": "@github-token",
+    "WEBHOOK_SECRET": "@webhook-secret"
+  }
+}
